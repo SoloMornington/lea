@@ -6,19 +6,7 @@
 // - a small example script (including the URL) was published in the LSL Wiki Script Library
 // - the script uses a HTTP request (I used that as a starting point) to retrieve the texture UUID of the map
 //
-// Added stuff:
-//
-// - error checking
-// - 24 hour timer
-// - change map on touch
-// - set object name to "Map of ..." (hover mouse over map to see it)
-//
-// How to use:
-//
-// - create a cube (change texture if desired)
-// - drop the script in it
-// - resize as needed
-//
+
 // Author: Runay Roussel
 // Released to the public domain on September 14th, 2009
 
@@ -26,6 +14,14 @@
 // - Works with link sets. One script for many prims.
 // - Sim name is retrieved from prim description field.
 // - Updated for llRegionSayTo().
+
+// How to use:
+// - Make some prims.
+// - Put sim names in the prims' description field.
+// - Link the prims.
+// - Put this script in the linkset.
+// - Voila.
+
 
 float gMapResetTime = 86400.0;  // timer interval = 24 hours
 float gTimeout = 30.0;
